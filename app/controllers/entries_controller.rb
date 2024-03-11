@@ -1,7 +1,6 @@
 class EntriesController < ApplicationController
 
   def index
-    @posts = Post.all
   end
 
   def new

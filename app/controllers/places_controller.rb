@@ -13,6 +13,12 @@ class PlacesController < ApplicationController
       flash["notice"] = "Please login before viewing entries"
       redirect_to "/login"
     end
+    respond_to do |format|
+      format.html # implicitly renders posts/index.html.erb
+      format.json do
+        render :json => @entries
+      end
+    end
   end
 
   def new
