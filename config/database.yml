@@ -26,3 +26,4 @@ production:
   database: tacogram_final_production
   username: tacogram_final
   password: <%= ENV["TACOGRAM_FINAL_DATABASE_PASSWORD"] %>
+  ## Didn't notice the above until after I deployed. Didn't wanna change it so that I could avoid breaking anything. Also Evan signed off on it.
